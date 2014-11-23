@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url(http://upload.wikimedia.org/wikipedia/commons/c/c2/London_skyline_2012_panorama.jpg);
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: black;
+    }
+    p {
+      font-family: "Arial";
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: #F5F5F5;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+      }
+      li {
+        display: block;
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./me.jpg">
+    <h2>Georgia Haigh</h2>
+    <ul>
+      <li><a href="#">Employment</a></li>
+      <li><a href="#">Voluntary</a></li>
+      <li><a href="#">Interests</a></li>
+    </ul>
+  </header>
+  <article>
+  <h2>Employment</h2>
+  <ul>
+  	<li>Prudential Regulation Authority</li>
+  	<li>Bank of England</li>
+  	<li>Waitrose</li>
+  	</ul>
+  <button>Like</button>
+  </article>
+  <article>
+  <h2>Voluntary</h2>
+  <ul>
+  	<li><a href="http://eastlondonscienceschool.co.uk/"> East London Science School</a></li>
+  	<li><a href="http://www.mapleleaftrust.org/">Maple Leaf Trust</li>
+  	<li><a href="http://www.debatingmatters.com/">Debating Matters</li>
+  	<li><a href="http://www.herculeswimbledonac.org.uk/">Hercules Wimbledon Athletics Club</li>
+  </ul>
+   <button>Like</button>
+   </article>
+  <article>
+  <h2>Interests</h2>
+  <ul>
+  	<li>Rugby</li>
+  	<li>Coding</li>
+  	<li>Music</li>
+  	<li>Current Affairs</li>
+  	</ul>
+   <button>Like</button>
+  </article>
+  <script>
+  alert("Javascript works!")
+  $("button").on("click", function(){alert("clicked!")})
+  </script>
+</body>
+
